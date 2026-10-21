@@ -1,0 +1,8 @@
+# _documentos.tsv — GENERADO por scripts/documentos.py; no editar
+# Caché del modo documentos (render.sh --documentos): una fila por página y formato; la clave es el sha256 de la
+# fuente y de la fecha de la página; sha256 es el de la salida en _site/. Ver web/docs/decisiones.md §4.5.
+fuente	formato	salida	clave	sha256
+404.qmd	-	-	7d54ed5799e9df9bbec481fa5bf8cd705139535426fb9cffb1b205e863ad2f51	-
+economia/2014-01-01-01-conceptos-basicos-de-economia/index.qmd	apaquarto-docx	economia/2014-01-01-01-conceptos-basicos-de-economia/index.docx	1665e435c9a694dffada61f40cddd567f14b5b131a636214be155a54f47efb50	942787982b681903c4b7f498e6e0daada7255dbc765f06ebda340b9e09ee6c91
+economia/2014-01-01-01-conceptos-basicos-de-economia/index.qmd	apaquarto-pdf	economia/2014-01-01-01-conceptos-basicos-de-economia/index.pdf	1665e435c9a694dffada61f40cddd567f14b5b131a636214be155a54f47efb50	777e9d519085e130d05a3786744d0e15d4eca3ad70fd4f41fcaa085d45b57fa9
+index.qmd	-	-	566cddd2cf104267c2ab059487c2312925fc60c205786bda4e4f005ad392b3d3	-
