@@ -1,5 +1,8 @@
 ---
-aliases:
+# URL que este post tuvo en el hub (achalmaedison.netlify.app): las redirige con 301 web/scripts/redirecciones-cursos.py.
+# No van en `aliases:`, que crearía las páginas de reenvío en el dominio de este pub y no en el del hub.
+aliases_hub:
+  - /cursos/pre_economia/2014-i/sesiones/02-las-necesidades-y-bienes/
   - /teching/economia-preuniversitaria/2014-01-07-las-necesidades-y-bienes/
 title: Necesidades humanas y clasificación bienes
 shorttitle: NECESIDADES Y BIENES

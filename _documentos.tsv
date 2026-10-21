@@ -3,6 +3,6 @@
 # fuente y de la fecha de la página; sha256 es el de la salida en _site/. Ver web/docs/decisiones.md §4.5.
 fuente	formato	salida	clave	sha256
 404.qmd	-	-	7d54ed5799e9df9bbec481fa5bf8cd705139535426fb9cffb1b205e863ad2f51	-
-economia/2014-01-01-01-conceptos-basicos-de-economia/index.qmd	apaquarto-docx	economia/2014-01-01-01-conceptos-basicos-de-economia/index.docx	1665e435c9a694dffada61f40cddd567f14b5b131a636214be155a54f47efb50	942787982b681903c4b7f498e6e0daada7255dbc765f06ebda340b9e09ee6c91
-economia/2014-01-01-01-conceptos-basicos-de-economia/index.qmd	apaquarto-pdf	economia/2014-01-01-01-conceptos-basicos-de-economia/index.pdf	1665e435c9a694dffada61f40cddd567f14b5b131a636214be155a54f47efb50	777e9d519085e130d05a3786744d0e15d4eca3ad70fd4f41fcaa085d45b57fa9
+economia/2014-01-01-01-conceptos-basicos-de-economia/index.qmd	apaquarto-docx	economia/2014-01-01-01-conceptos-basicos-de-economia/index.docx	19135c571702421cec2b2322e5354bb04d757a065f388f0ea53b7cdcaa5bf571	04865ac70b7667de20e419a18c1488e96fdc9adc93ed084231884a1b99583a2d
+economia/2014-01-01-01-conceptos-basicos-de-economia/index.qmd	apaquarto-pdf	economia/2014-01-01-01-conceptos-basicos-de-economia/index.pdf	19135c571702421cec2b2322e5354bb04d757a065f388f0ea53b7cdcaa5bf571	85e7179d372f49ac805e82339493003b3d5a5f552db81607e09acc564af6202c
 index.qmd	-	-	566cddd2cf104267c2ab059487c2312925fc60c205786bda4e4f005ad392b3d3	-
