@@ -1,0 +1,63 @@
+---
+tipo: readme
+estado: activo
+---
+# propaedeutica/ — Preuniversitario y nivelación: blog satélite del hub `web` (repo propaedeutica, propaedeutica.netlify.app)
+
+<!-- GENERADO por `web/scripts/pubs.py readme --aplicar` desde `web/_pubs/pubs.yml` (2026-10-21); no editar aquí: se regenera desde el hub -->
+
+## Qué es
+
+Álgebra, aritmética, trigonometría, física y economía para el ingreso universitario, y cursos de nivelación. Es uno de los 11 blogs satélite de la familia Quarto de Edison Achalma: un sitio Quarto
+con repositorio y sitio Netlify propios, incluido como submódulo git en el hub `web` (repo
+`website-achalma`) bajo `web/_pubs/propaedeutica/`. El mismo blog tiene tres nombres: carpeta `propaedeutica`, repo
+GitHub `achalmed/propaedeutica` y dominio `propaedeutica.netlify.app`; el registro de los tres es `web/_pubs/pubs.yml`.
+
+El 12.º blog, creado el 2026-10-21 para el área `preuniversitario` del currículo (decisión B3, `web/docs/plataforma-educativa.md` §7); nació ya como vitrina de `web/_aula`.
+
+El tema visual (SCSS, JS, extensiones, filtros, `scripts/build-page-css.sh`) **no se edita aquí**: vive en el hub y
+llega por `web/scripts/sync-theme-pubs.sh`. Lo propio de este blog es `_quarto.yml`, `index.qmd`, `_contenido-*.qmd`,
+`assets/img/` y las entradas; los índices `_contenido_<sección>.qmd` los genera `scripts-quarto`
+(`script_generador_publicacion_similar`) y no se editan a mano.
+
+## Uso
+
+```bash
+quarto preview                              # vista previa local
+quarto render                               # regenera _site/ (freeze: true: el código no se re-ejecuta)
+git add -- <carpeta del post> _contenido_*.qmd _site && git commit -m "post: …"   # confirmar AQUÍ primero…
+../../scripts/puerta-r6.sh .                # puerta R6: _site/index.html al día antes del push (también es el hook pre-push)
+git push                                    # …al remoto propio (ssh git@github.com:achalmed/propaedeutica.git)
+cd ../.. && git add _pubs/propaedeutica && git commit -m "pubs: propaedeutica al último commit"   # y mover el puntero en el hub
+```
+
+## Estructura
+
+| carpeta | qué es | entradas |
+|---|---|--:|
+| `algebra-preuniversitaria/` | sección temática | 46 |
+| `aritmetica-preuniversitaria/` | sección temática | 31 |
+| `economia/` | sección temática | 62 |
+| `fisica-preuniversitaria/` | sección temática | 45 |
+| `trigonometria-preuniversitaria/` | sección temática | 21 |
+| `_quarto.yml`, `index.qmd`, `404.qmd`, `_contenido-inicio.qmd`, `_contenido-final.qmd` | configuración y portada propias del blog | |
+| `assets/scss/`, `assets/js/`, `assets/css/global.css`, `assets/css/components/`, `_extensions/`, `_filters/apa-floats-html.lua`, `scripts/build-page-css.sh` | tema propagado desde el hub por `sync-theme-pubs.sh`: no se edita aquí | |
+| `assets/img/`, `assets/fonts/`, `assets/gtm-*.html`, `assets/interactions.html`, `assets/scss/05-pages/`, `assets/css/pages/`, `_filters/_metadata-pdf.lua`, `_partials/` | propios del blog (no los escribe la sincronización) | |
+| `_site/` | sitio generado por `quarto render`; versionado a propósito: su push es el despliegue (`web/docs/decisiones.md` §4.1) | |
+| `THEME_VERSION` | sello del tema: commit del hub y sha256 del conjunto; lo escribe `sync-theme-pubs.sh --aplicar` (GENERADO) | |
+| `netlify.toml` | configuración de Netlify: publica `_site/` sin comando de build | |
+
+205 entradas. Cada entrada es `<sección>/AAAA-MM-DD-slug/index.qmd` con frontmatter apaquarto y fecha ISO;
+sus metadatos se editan en masa desde `scripts-quarto` (`metadata_manager`).
+
+## Documentación
+
+Toda la familia se documenta una vez, en el hub: `web/README.md` (qué es la familia y cómo se opera),
+`web/docs/pubs-submodulos.md` (submódulos y flujo de commit), `web/docs/publicar-un-post.md` (de
+principio a fin), `web/docs/despliegue-netlify.md` (cómo publica cada sitio) y `assets/scss/README.md` (el tema).
+
+## Límite honesto
+
+- Este README es el único documento propio del blog y se regenera desde el hub: lo escrito aquí a mano se pierde.
+- `_site/` sigue en git: Netlify publica el _site/ empujado, sin build (decisiones §4.1 del hub); `netlify.toml` lo declara (`publish = "_site"`, sin comando de build), y el hook pre-push de la puerta R6 no viaja con el repo: lo instala `web/scripts/puerta-r6.sh --instalar`.
+- Licencia: el contenido es CC-BY-SA-4.0 (`license.qmd` del hub) y el código MPL-2.0 (`LICENSE`), igual en los 12 sitios (D9, `web/docs/decisiones.md` §3.6).

@@ -1,0 +1,48 @@
+---
+aliases:
+  - /teching/economia-preuniversitaria/2014-03-22-el-desempleo/
+title: Desempleo
+subtitle: ' tipos y medición'
+shorttitle: DESEMPLEO
+abstract: Este abstract será actualizado una vez que se complete el contenido final
+  del artículo.
+keywords: []
+categories:
+- Economia Basica
+tags:
+- economia_basica
+- desempleo
+author-note:
+  status-changes:
+    affiliation-change: null
+    deceased: null
+  disclosures:
+    study-registration: null
+    data-sharing: null
+    related-report: null
+    conflict-of-interest: El autor no tiene conflictos de interés que revelar.
+    financial-support: null
+    gratitude: null
+    authorship-agreements: null
+description: Desempleo friccional, estructural, cíclico y tasa natural en introducción
+  preuniversitaria a macroeconomía.
+eval: false
+citation:
+  type: article-journal
+  author:
+  - Edison Achalma
+  pdf-url: https://propaedeutica.netlify.app/economia/2014-03-22-13-el-desempleo/index.pdf
+date: 2014-03-22
+draft: true
+image: ../featured.jpg
+curso: economia-preuniversitaria
+tema: "4.5"
+---
+
+Este artículo está actualmente en proceso de edición, y todas las secciones serán ampliadas y refinadas en futuras revisiones.
+
+{{< include ../../_contenido-inicio.qmd >}}
+
+{{< include ../_contenido_economia.qmd >}}
+
+{{< include ../../_contenido-final.qmd >}}

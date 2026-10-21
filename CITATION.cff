@@ -1,0 +1,16 @@
+# CITATION.cff — GENERADO por `web/scripts/pubs.py citation --aplicar` desde `web/_pubs/pubs.yml` (2026-10-21); no editar aquí
+cff-version: 1.2.0
+title: "Preuniversitario y nivelación — blog de Edison Achalma (propaedeutica)"
+message: "Si citas una entrada de este blog, usa los metadatos de este archivo y la URL de la entrada."
+type: software
+authors:
+  - given-names: Edison
+    family-names: Achalma
+    orcid: 'https://orcid.org/0000-0001-6996-3364'
+identifiers:
+  - type: url
+    value: 'https://propaedeutica.netlify.app/'
+repository-code: 'https://github.com/achalmed/propaedeutica'
+url: 'https://propaedeutica.netlify.app/'
+abstract: "Álgebra, aritmética, trigonometría, física y economía para el ingreso universitario, y cursos de nivelación. Blog satélite del hub https://achalmaedison.netlify.app/ (website-achalma)."
+license: CC-BY-SA-4.0   # se cita el contenido; el código va en LICENSE (MPL-2.0)
