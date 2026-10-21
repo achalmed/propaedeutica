@@ -8,7 +8,7 @@ estado: activo
 
 ## Qué es
 
-Álgebra, aritmética, trigonometría, física y economía para el ingreso universitario, y cursos de nivelación. Es uno de los 11 blogs satélite de la familia Quarto de Edison Achalma: un sitio Quarto
+Álgebra, aritmética, trigonometría, física y economía para el ingreso universitario, y cursos de nivelación. Es uno de los blogs satélite de la familia Quarto de Edison Achalma: un sitio Quarto
 con repositorio y sitio Netlify propios, incluido como submódulo git en el hub `web` (repo
 `website-achalma`) bajo `web/_pubs/propaedeutica/`. El mismo blog tiene tres nombres: carpeta `propaedeutica`, repo
 GitHub `achalmed/propaedeutica` y dominio `propaedeutica.netlify.app`; el registro de los tres es `web/_pubs/pubs.yml`.
